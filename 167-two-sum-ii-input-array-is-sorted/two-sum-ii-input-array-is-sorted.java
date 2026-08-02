@@ -7,18 +7,18 @@ class Solution {
         while(i<j)
         {
             int sum=numbers[i]+numbers[j];
-            if(sum==target)
-            {
-                return new int[]{i+1,j+1};
-
-            }
-            else if(numbers[i]+numbers[j]>target)
+         
+            if(sum>target)
             {
                 j--;
             }
-            else
+            else if(sum<target)
             {
                 i++;
+            }
+            else
+            {
+                return new int[]{i+1,j+1};
             }
         
         }
