@@ -3,7 +3,7 @@ class Solution {
         int i=0;
         int j=numbers.length-1;
         
-        Arrays.sort(numbers);
+    
         while(i<j)
         {
             int sum=numbers[i]+numbers[j];
