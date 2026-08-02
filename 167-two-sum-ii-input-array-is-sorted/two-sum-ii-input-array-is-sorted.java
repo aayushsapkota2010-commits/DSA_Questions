@@ -6,7 +6,8 @@ class Solution {
         Arrays.sort(numbers);
         while(i<j)
         {
-            if(numbers[i]+numbers[j]==target)
+            int sum=numbers[i]+numbers[j];
+            if(sum==target)
             {
                 return new int[]{i+1,j+1};
 
