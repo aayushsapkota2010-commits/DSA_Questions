@@ -7,13 +7,9 @@ class Solution {
         {
             if(s.charAt(i)==t.charAt(j))
             {
-                i=i+1;
                 j=j+1;
             }
-            else 
-            {
-                i=i+1;
-            }
+            i=i+1;
         }
         return t.length()-j;
     }
