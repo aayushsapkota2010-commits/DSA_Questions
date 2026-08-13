@@ -4,23 +4,22 @@ class Solution {
         int j=nums.length-1;
         int k=nums.length-1;
         int[] ans=new int[nums.length];
+        
         while(i<=j)
         {
-            if(Math.abs(nums[i])>Math.abs(nums[j]))
+            if(Math.abs(nums[j])>Math.abs(nums[i]))
             {
-                ans[k]=nums[i]*nums[i];
-                i++;
-                k--;
-
-            }
-            else {
-                 ans[k]=nums[j]*nums[j];
+                ans[k]=nums[j]*nums[j];
                 j--;
                 k--;
             }
-            
-            
-            
+           else
+            {
+                ans[k]=nums[i]*nums[i];
+                k--;
+                i++;
+            }  
+
         }
         return ans;
         
