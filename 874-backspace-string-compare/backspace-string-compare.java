@@ -15,45 +15,47 @@ class Solution {
                     skipS++;
                     i--;
                 }
-                else if(skipS>0)
+               else if(skipS>0)
                 {
                     skipS--;
                     i--;
                 }
+
                 else
                 {
                     break;
                 }
+
             }
 
-             while(j>=0)
+              while(j>=0)
             {
                 if(t.charAt(j)=='#')
                 {
                     skipT++;
                     j--;
                 }
-                else if(skipT>0)
+               else if(skipT>0)
                 {
                     skipT--;
                     j--;
                 }
+
                 else
                 {
                     break;
                 }
+
             }
 
             if(i>=0 && j<0)
             {
                 return false;
             }
-
             if(i<0 && j>=0)
             {
                 return false;
             }
-
             if(i>=0 && j>=0 && s.charAt(i)!=t.charAt(j))
             {
                 return false;
