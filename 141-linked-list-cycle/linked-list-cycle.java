@@ -15,13 +15,12 @@ public class Solution {
         ListNode curr=head;
         while(curr!=null)
         {
-            curr=curr.next;
-
             if(set.contains(curr))
             {
                 return true;
             }
             set.add(curr);
+            curr=curr.next;
         }
         return false;
     }
