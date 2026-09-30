@@ -1,24 +1,26 @@
 class Solution {
     public int searchInsert(int[] nums, int target) {
-        int start=0;
-        int end=nums.length-1;
-        while(start<=end)
+        int low=0;
+        int high=nums.length-1;
+
+        while(low<=high)
         {
-            int mid=start+(end-start)/2;
+            int mid=low+(high-low)/2;
+
             if(nums[mid]==target)
             {
                 return mid;
             }
+
             else if(nums[mid]<target)
             {
-                start=mid+1;
+                low=mid+1;
             }
-            else
-            {
-                end=mid-1;
+
+            else {
+                high=mid-1;
             }
         }
-        return start;
-        
+        return low;
     }
 }
