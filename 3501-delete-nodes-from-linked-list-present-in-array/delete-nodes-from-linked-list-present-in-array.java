@@ -25,12 +25,13 @@ class Solution {
         if(set.contains(curr.val))
         {
             prev.next=curr.next;
-            curr=curr.next;
+            
         }
         else{
         prev=curr;
-        curr=curr.next;
+      
         }
+          curr=curr.next; 
     }
 
     return phead.next;
