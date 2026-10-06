@@ -1,11 +1,10 @@
 class Solution {
     public int minAddToMakeValid(String s) {
-        int i=0;
         int open=0;
         int close=0;
-        while(i<s.length())
+        for(char c: s.toCharArray())
         {
-            if(s.charAt(i)=='(')
+            if(c=='(')
             {
                 open++;
             }
@@ -18,7 +17,6 @@ class Solution {
                     close++;
                 }
             }
-            i++;
             
         }
         return open+close;
