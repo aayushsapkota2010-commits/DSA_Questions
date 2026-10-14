@@ -8,16 +8,17 @@ class Solution {
             {
                 open++;
             }
-            else{
+            else
+            {
                 if(open>0)
                 {
                     open--;
                 }
-                else{
+                else
+                {
                     close++;
                 }
             }
-            
         }
         return open+close;
     }
