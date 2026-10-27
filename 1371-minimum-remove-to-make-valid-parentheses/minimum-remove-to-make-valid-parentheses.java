@@ -6,6 +6,7 @@ class Solution {
         for(int i=0;i<s.length();i++)
         {
             char c=s.charAt(i);
+
             if(c=='(')
             {
                 stack.push(i);
@@ -29,6 +30,7 @@ class Solution {
         }
 
         StringBuilder sb=new StringBuilder();
+
         for(int i=0;i<s.length();i++)
         {
             if(set.contains(i))
@@ -37,7 +39,8 @@ class Solution {
             }
             sb.append(s.charAt(i));
         }
-        
+
         return sb.toString();
+        
     }
 }
