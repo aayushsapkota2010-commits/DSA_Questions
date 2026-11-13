@@ -9,6 +9,7 @@ class Solution {
             if(stack.isEmpty())
             {
                 stack.push(i);
+                continue;
             }
             int curr=nums[i];
 
